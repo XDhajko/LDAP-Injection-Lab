@@ -22,7 +22,7 @@ services:
     working_dir: /web
     volumes:
       - ./web:/web
-    command: python manage.py runserver 0.0.0.0:8000
+    command: sh -c "python manage.py migrate --noinput && python manage.py runserver 0.0.0.0:8000"
     environment:
       DEBUG: "1"
       BASE_DN: "dc=techfusion,dc=corp"
