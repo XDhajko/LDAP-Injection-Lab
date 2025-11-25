@@ -10,8 +10,8 @@ This repository contains a series of exercises designed to teach you about LDAP 
 To get started with the lab exercises, follow these steps:
 1. Clone and enter the workspace:
    ```bash
-   git clone https://github.com/<your-org>/ldap-injection-lab.git
-   cd ldap-injection-lab/virtual_setup_complete
+   git clone https://github.com/XDhajko/LDAP-Injection-Lab
+   cd LDAP-Injection-Lab
    ```
 2. Launch the lab:
    ```bash
