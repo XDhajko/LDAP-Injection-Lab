@@ -11,7 +11,7 @@ To get started with the lab exercises, follow these steps:
 1. Clone and enter the workspace:
    ```bash
    git clone https://github.com/XDhajko/LDAP-Injection-Lab
-   cd ldap-injection-lab/virtual_setup_complete
+   cd LDAP-Injection-Lab
    ```
 2. Launch the lab:
    ```bash
