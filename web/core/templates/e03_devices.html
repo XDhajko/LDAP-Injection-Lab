@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}E03 Devices{% endblock %}
+{% block content %}
+<div class="container mt-4">
+    <h2>Device Portal - Exercise 03</h2>
+
+    {# Detail mode #}
+    {% if device_detail %}
+        <div class="card mb-3">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Device Details</span>
+                <a class="btn btn-sm btn-outline-secondary" href="{{ back_url }}">&larr; Back</a>
+            </div>
+            <div class="card-body">
+                <div class="d-flex align-items-start">
+                    <img src="{% static 'img/' %}{{ device_detail.image }}"
+                         onerror="this.onerror=null; this.src='{% static 'img/device.png' %}'"
+                         alt="{{ device_detail.type }}"
+                         class="mr-3"
+                         style="max-height:120px;width:auto;">
+                    <div class="flex-fill">
+                        <dl class="row mb-0">
+                            {% for k, v in device_detail.attrs.items %}
+                                <dt class="col-sm-4">{{ k }}:</dt>
+                                <dd class="col-sm-8">{{ v }}</dd>
+                            {% endfor %}
+                            <dt class="col-sm-4">DN:</dt>
+                            <dd class="col-sm-8"><small><code>{{ device_detail.dn }}</code></small></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% else %}
+    <div class="card mb-4">
+        <div class="card-body">
+            <form method="get" action="{% url 'e03_devices' %}">
+                <div class="form-group">
+                    <label for="device_type">Select Device Type:</label>
+                    <select name="device_type" id="device_type" class="form-control" onchange="this.form.submit()">
+                        <option value="printer" {% if device_type == 'printer' %}selected{% endif %}>Printers</option>
+                        <option value="computer" {% if device_type == 'computer' %}selected{% endif %}>Computers</option>
+                        <option value="mobile-phone" {% if device_type == 'mobile-phone' %}selected{% endif %}>Mobile Phones</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+    {% if devices %}
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            {% for d in devices %}
+              <div class="col">
+                <div class="card h-100 shadow-sm">
+                  <!-- Hidden locator for solution script parsing -->
+                  <span class="device-locator d-none" 
+                        data-name="{{ d.name }}" 
+                        data-type="{{ d.type }}" 
+                        data-owner="{{ d.owner }}"></span>
+                  
+                  <div class="card-body text-center">
+                    <img src="/static/img/{{ d.image }}" alt="{{ d.type }}" class="img-fluid mb-3" style="max-height: 80px;">
+                    <h6 class="card-title">{{ d.name }}</h6>
+                    <span class="badge bg-secondary mb-2">{{ d.type }}</span>
+                    <div class="small text-muted">{{ d.location }}</div>
+                    <!-- Stretched link to make the whole card clickable -->
+                    <a href="{% url 'e03_device_detail' %}?dn={{ d.dn|urlencode }}&device_type={{ device_type|urlencode }}" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+            {% empty %}
+              <div class="col-12 text-center py-5">
+                <p class="text-muted">No devices found matching criteria.</p>
+              </div>
+            {% endfor %}
+          </div>
+    {% else %}
+        {% if not error %}
+        <div class="alert alert-warning">No devices found.</div>
+        {% endif %}
+    {% endif %}
+    {% endif %} {# end detail/list switch #}
+</div>
+{% endblock %}

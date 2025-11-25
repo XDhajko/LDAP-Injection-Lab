@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block title %}E02 File Browser{% endblock %}
+{% block content %}
+  <style>
+    /* Match card-header horizontal padding (1rem) on table edges only */
+    .edge-pad thead th:first-child,
+    .edge-pad tbody td:first-child { padding-left: 1rem; }
+    .edge-pad thead th:last-child,
+    .edge-pad tbody td:last-child { padding-right: 1rem; }
+    .download-icon { text-decoration:none; }
+    .download-icon.disabled { opacity:.35; cursor:not-allowed; }
+  </style>
+
+  <div class="card shadow-sm">
+    <div class="card-header">
+      <form class="row g-2" method="get">
+        <div class="col-md-4">
+          <input name="q" value="{{ q }}" class="form-control form-control-sm" placeholder="Filename pattern (e.g. plan)">
+        </div>
+        <div class="col-md-4">
+          <select name="dept" class="form-select form-select-sm">
+            {% for d in departments %}
+              <option value="{{ d }}" {% if d == dept %}selected{% endif %}>{{ d|default:'(Default)' }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-sm btn-primary">Search</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="card-body p-0">
+      <div class="table-responsive">
+        <table class="table table-sm mb-0 edge-pad" style="--bs-table-cell-padding-x:1rem;">
+          <thead class="table-light">
+            <tr>
+              <th>File (cn)</th>
+              <th>Dept</th>
+              <th>Owner uid</th>
+              <th>Classification</th>
+              <th style="width:55px;">Download</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for f in page_obj.object_list %}
+              <tr>
+                <td>{{ f.cn }}</td>
+                <td>{{ f.file_dept }}</td>
+                <td>{{ f.owner_uid }}</td>
+                <td>{{ f.classification }}</td>
+                <td>
+                  {% if f.download_exists %}
+                    <a class="download-icon" href="{% url 'e02_download' %}?path={{ f.download_rel|urlencode }}" title="Download">
+                      <i class="fa-solid fa-download"></i>
+                    </a>
+                  {% else %}
+                    <span class="download-icon disabled" title="File not found in project_files">
+                      <i class="fa-solid fa-download"></i>
+                    </span>
+                  {% endif %}
+                </td>
+              </tr>
+            {% empty %}
+              <tr><td colspan="5" class="text-center py-4">No files.</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card-footer d-flex justify-content-between align-items-center">
+      <div>Page {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}</div>
+      <div class="small text-muted">Results: {{ page_obj.paginator.count }}</div>
+    </div>
+    {% if page_obj.has_other_pages %}
+    <div class="px-3 py-2 border-top d-flex justify-content-between align-items-center">
+      <div>
+        {% if page_obj.has_previous %}
+          <a href="?q={{ q|urlencode }}&dept={{ dept|urlencode }}&page={{ page_obj.previous_page_number }}">« Prev</a>
+        {% else %}« Prev{% endif %}
+        |
+        {% if page_obj.has_next %}
+          <a href="?q={{ q|urlencode }}&dept={{ dept|urlencode }}&page={{ page_obj.next_page_number }}">Next »</a>
+        {% else %}Next »{% endif %}
+      </div>
+      <div class="small">
+        {% for p in page_obj.paginator.page_range %}
+          {% if p == page_obj.number %}
+            <span class="fw-bold">{{ p }}</span>
+          {% else %}
+            <a href="?q={{ q|urlencode }}&dept={{ dept|urlencode }}&page={{ p }}">{{ p }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+{% endblock %}

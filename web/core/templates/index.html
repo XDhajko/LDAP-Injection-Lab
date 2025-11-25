@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}LDAP Injection Lab - Index{% endblock %}
+{% block content %}
+<div class="card card-centered shadow-sm">
+  <div class="card-body">
+    <h2 class="mb-3">LDAP Injection Lab</h2>
+    <p class="text-muted">Use settings to adjust Client Mode and Safeness before each exercise.</p>
+    <div class="table-responsive">
+      <table class="table align-middle">
+        <thead><tr><th>Exercise</th><th>Focus</th><th>Difficulty</th><th>Link</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>E01 – Login Bypass</strong></td>
+            <td>Credential search+bind; AND filter tampering for auth bypass.</td>
+            <td><span class="badge bg-success">Easy</span></td>
+            <td><a href="{% url 'e01_login' %}" class="btn btn-sm btn-primary">Open</a></td>
+          </tr>
+          <tr>
+            <td><strong>E02 – File Browser</strong></td>
+            <td>Department scoping; escaping vs raw in filename filtering.</td>
+            <td><span class="badge bg-warning text-dark">Intermediate</span></td>
+            <td><a href="{% url 'e02_file_browser' %}" class="btn btn-sm btn-primary">Open</a></td>
+          </tr>
+          <tr>
+            <td><strong>E03 – Devices</strong></td>
+            <td>Owner OR expansion; inserting clauses in deviceType filters.</td>
+            <td><span class="badge bg-info text-dark">Intermediate</span></td>
+            <td><a href="{% url 'e03_devices' %}" class="btn btn-sm btn-primary">Open</a></td>
+          </tr>
+          <tr>
+            <td><strong>E04 – Blind Probe AND</strong></td>
+            <td>Boolean inference with fixed AND chain (group + department).</td>
+            <td><span class="badge bg-danger">Hard</span></td>
+            <td><a href="{% url 'e04_blind_and' %}" class="btn btn-sm btn-primary">Open</a></td>
+          </tr>
+          <tr>
+            <td><strong>E05 – Blind Probe OR</strong></td>
+            <td>Boolean inference via OR pattern (uid/mail) substring injection.</td>
+            <td><span class="badge bg-danger">Hard</span></td>
+            <td><a href="{% url 'e05_blind_or' %}" class="btn btn-sm btn-primary">Open</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-muted mt-3"><small>Practice safe construction vs vulnerable raw concatenation.</small></p>
+  </div>
+</div>
+{% endblock %}

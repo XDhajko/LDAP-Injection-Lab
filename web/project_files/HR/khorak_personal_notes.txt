@@ -1,0 +1,7 @@
+File: khorak_personal_notes.txt
+Department: HR
+Classification: PRIVATE
+Owner UID: khorak
+
+This is placeholder demo content for LDAP injection lab.
+The real file would contain sensitive or public data according to its classification.

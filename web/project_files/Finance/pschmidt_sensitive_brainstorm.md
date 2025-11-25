@@ -1,0 +1,7 @@
+File: pschmidt_sensitive_brainstorm.md
+Department: Finance
+Classification: PRIVATE
+Owner UID: pschmidt
+
+This is placeholder demo content for LDAP injection lab.
+The real file would contain sensitive or public data according to its classification.

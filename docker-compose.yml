@@ -1,0 +1,43 @@
+services:
+  openldap:
+    build: ./ldap
+    image: techfusion/openldap:seeded
+    container_name: openldap
+    environment:
+      LDAP_ORGANISATION: "TechFusion Corp"
+      LDAP_DOMAIN: "techfusion.corp"    
+      LDAP_ADMIN_PASSWORD: "admin"
+      LDAP_LOG_LEVEL: "256"          
+    ports:
+      - "389:389"
+    volumes:
+      - ldap_db:/var/lib/ldap
+      - ldap_config:/etc/ldap/slapd.d
+
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    image: techfusion/web:local
+    working_dir: /web
+    volumes:
+      - ./web:/web
+    command: python manage.py runserver 0.0.0.0:8000
+    environment:
+      DEBUG: "1"
+      BASE_DN: "dc=techfusion,dc=corp"
+      LDAP_URI_OPENLDAP: "ldap://openldap:389"
+      BIND_DN: "cn=admin,dc=techfusion,dc=corp"
+      BIND_PW: "admin"
+      LDAP_URI_AD: "ldap://samba-ad:389"
+      AD_BIND_DN: "administrator@TECHFUSION.CORP"
+      AD_BIND_PW: "AdminPassw0rd!"
+      CLIENT_MODE: "openldap-lenient"
+    ports:
+      - "8000:8000"
+    depends_on:
+      - openldap
+
+volumes:
+  ldap_db:
+  ldap_config:

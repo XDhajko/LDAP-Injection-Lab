@@ -1,0 +1,7 @@
+File: mlopez_personal_notes.txt
+Department: Finance
+Classification: PRIVATE
+Owner UID: mlopez
+
+This is placeholder demo content for LDAP injection lab.
+The real file would contain sensitive or public data according to its classification.

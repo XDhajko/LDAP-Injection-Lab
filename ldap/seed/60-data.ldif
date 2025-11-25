@@ -1,0 +1,1674 @@
+# -------- People (under Departments/<Dept>/Users) --------
+dn: uid=tkral,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Tomas Kral
+sn: Kral
+givenName: Tomas
+uid: tkral
+mail: tkral@techfusion.corp
+departmentNumber: Engineering
+ou: Engineering
+title: Software Engineer
+telephoneNumber: +421 2 5551301
+description: Test user in Engineering for LDAP injection lab
+labMemberOf: cn=ENG-Platform-Developers,ou=Groups,dc=techfusion,dc=corp
+labMemberOf: cn=IT-Operations-And-Security,ou=Groups,dc=techfusion,dc=corp
+userPassword: ENG_tkral!2025
+
+dn: uid=ajohnson,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Alice Johnson
+sn: Johnson
+givenName: Alice
+uid: ajohnson
+mail: ajohnson@techfusion.corp
+departmentNumber: Engineering
+ou: Engineering
+title: Senior Developer
+telephoneNumber: +421 2 5551302
+description: Test user in Engineering for LDAP injection lab
+labMemberOf: cn=ENG-Platform-Developers,ou=Groups,dc=techfusion,dc=corp
+labMemberOf: cn=IT-Operations-And-Security,ou=Groups,dc=techfusion,dc=corp
+userPassword: ENG_ajohnson!2025
+
+dn: uid=msvoboda,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Marek Svoboda
+sn: Svoboda
+givenName: Marek
+uid: msvoboda
+mail: msvoboda@techfusion.corp
+departmentNumber: Engineering
+ou: Engineering
+title: DevOps Engineer
+telephoneNumber: +421 2 5551303
+description: Test user in Engineering for LDAP injection lab
+labMemberOf: cn=ENG-Platform-Developers,ou=Groups,dc=techfusion,dc=corp
+userPassword: ENG_msvoboda!2025
+
+dn: uid=psingh,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Priya Singh
+sn: Singh
+givenName: Priya
+uid: psingh
+mail: psingh@techfusion.corp
+departmentNumber: Engineering
+ou: Engineering
+title: QA Engineer
+telephoneNumber: +421 2 5551304
+description: Test user in Engineering for LDAP injection lab
+labMemberOf: cn=ENG-Platform-Developers,ou=Groups,dc=techfusion,dc=corp
+userPassword: ENG_psingh!2025
+
+dn: uid=kmiller,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Kevin Miller
+sn: Miller
+givenName: Kevin
+uid: kmiller
+mail: kmiller@techfusion.corp
+departmentNumber: Engineering
+ou: Engineering
+title: Systems Architect
+telephoneNumber: +421 2 5551305
+description: Test user in Engineering for LDAP injection lab
+labMemberOf: cn=ENG-Platform-Developers,ou=Groups,dc=techfusion,dc=corp
+userPassword: ENG_kmiller!2025
+
+dn: uid=egarcia,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Elena Garcia
+sn: Garcia
+givenName: Elena
+uid: egarcia
+mail: egarcia@techfusion.corp
+departmentNumber: Engineering
+ou: Engineering
+title: Backend Developer
+telephoneNumber: +421 2 5551306
+description: Test user in Engineering for LDAP injection lab
+labMemberOf: cn=ENG-Platform-Developers,ou=Groups,dc=techfusion,dc=corp
+userPassword: ENG_egarcia!2025
+
+
+dn: uid=jpeterson,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: John Peterson
+sn: Peterson
+givenName: John
+uid: jpeterson
+mail: jpeterson@techfusion.corp
+departmentNumber: Finance
+ou: Finance
+title: Analyst
+telephoneNumber: +421 2 5551101
+description: Test user in Finance for LDAP injection lab
+labMemberOf: cn=FIN-Planning-And-Analysis,ou=Groups,dc=techfusion,dc=corp
+userPassword: FIN_jpeterson!2025
+
+dn: uid=mlopez,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Maria Lopez
+sn: Lopez
+givenName: Maria
+uid: mlopez
+mail: mlopez@techfusion.corp
+departmentNumber: Finance
+ou: Finance
+title: Senior Analyst
+telephoneNumber: +421 2 5551102
+description: Test user in Finance for LDAP injection lab
+labMemberOf: cn=FIN-Planning-And-Analysis,ou=Groups,dc=techfusion,dc=corp
+userPassword: FIN_mlopez!2025
+
+dn: uid=dnovak,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Daniel Novak
+sn: Novak
+givenName: Daniel
+uid: dnovak
+mail: dnovak@techfusion.corp
+departmentNumber: Finance
+ou: Finance
+title: Accountant
+telephoneNumber: +421 2 5551103
+description: Test user in Finance for LDAP injection lab
+labMemberOf: cn=FIN-Planning-And-Analysis,ou=Groups,dc=techfusion,dc=corp
+userPassword: FIN_dnovak!2025
+
+dn: uid=skim,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Sarah Kim
+sn: Kim
+givenName: Sarah
+uid: skim
+mail: skim@techfusion.corp
+departmentNumber: Finance
+ou: Finance
+title: Controller
+telephoneNumber: +421 2 5551104
+description: Test user in Finance for LDAP injection lab
+labMemberOf: cn=FIN-Planning-And-Analysis,ou=Groups,dc=techfusion,dc=corp
+userPassword: FIN_skim!2025
+
+dn: uid=pschmidt,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Peter Schmidt
+sn: Schmidt
+givenName: Peter
+uid: pschmidt
+mail: pschmidt@techfusion.corp
+departmentNumber: Finance
+ou: Finance
+title: Financial Manager
+telephoneNumber: +421 2 5551105
+description: Test user in Finance for LDAP injection lab
+labMemberOf: cn=FIN-Planning-And-Analysis,ou=Groups,dc=techfusion,dc=corp
+userPassword: FIN_pschmidt!2025
+
+dn: uid=eclark,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Emily Clark
+sn: Clark
+givenName: Emily
+uid: eclark
+mail: eclark@techfusion.corp
+departmentNumber: Finance
+ou: Finance
+title: Junior Accountant
+telephoneNumber: +421 2 5551106
+description: Test user in Finance for LDAP injection lab
+labMemberOf: cn=HR-Recruitment-And-Payroll,ou=Groups,dc=techfusion,dc=corp
+userPassword: FIN_eclark!2025
+
+
+dn: uid=anovakova,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Anna Novakova
+sn: Novakova
+givenName: Anna
+uid: anovakova
+mail: anovakova@techfusion.corp
+departmentNumber: HR
+ou: HR
+title: HR Specialist
+telephoneNumber: +421 2 5551201
+description: Test user in HR for LDAP injection lab
+labMemberOf: cn=HR-Recruitment-And-Payroll,ou=Groups,dc=techfusion,dc=corp
+userPassword: HR_anovakova!2025
+
+dn: uid=rbrown,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Robert Brown
+sn: Brown
+givenName: Robert
+uid: rbrown
+mail: rbrown@techfusion.corp
+departmentNumber: HR
+ou: HR
+title: HR Manager
+telephoneNumber: +421 2 5551202
+description: Test user in HR for LDAP injection lab
+labMemberOf: cn=HR-Recruitment-And-Payroll,ou=Groups,dc=techfusion,dc=corp
+userPassword: HR_rbrown!2025
+
+dn: uid=lrossi,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Lucia Rossi
+sn: Rossi
+givenName: Lucia
+uid: lrossi
+mail: lrossi@techfusion.corp
+departmentNumber: HR
+ou: HR
+title: Recruiter
+telephoneNumber: +421 2 5551203
+description: Test user in HR for LDAP injection lab
+labMemberOf: cn=HR-Recruitment-And-Payroll,ou=Groups,dc=techfusion,dc=corp
+userPassword: HR_lrossi!2025
+
+dn: uid=mgreen,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Michael Green
+sn: Green
+givenName: Michael
+uid: mgreen
+mail: mgreen@techfusion.corp
+departmentNumber: HR
+ou: HR
+title: HR Generalist
+telephoneNumber: +421 2 5551204
+description: Test user in HR for LDAP injection lab
+labMemberOf: cn=HR-Recruitment-And-Payroll,ou=Groups,dc=techfusion,dc=corp
+userPassword: HR_mgreen!2025
+
+dn: uid=khorak,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Katarina Horak
+sn: Horak
+givenName: Katarina
+uid: khorak
+mail: khorak@techfusion.corp
+departmentNumber: HR
+ou: HR
+title: Training Coordinator
+telephoneNumber: +421 2 5551205
+description: Test user in HR for LDAP injection lab
+labMemberOf: cn=HR-Recruitment-And-Payroll,ou=Groups,dc=techfusion,dc=corp
+userPassword: HR_khorak!2025
+
+dn: uid=dwilson,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: David Wilson
+sn: Wilson
+givenName: David
+uid: dwilson
+mail: dwilson@techfusion.corp
+departmentNumber: HR
+ou: HR
+title: Compensation Analyst
+telephoneNumber: +421 2 5551206
+description: Test user in HR for LDAP injection lab
+labMemberOf: cn=HR-Recruitment-And-Payroll,ou=Groups,dc=techfusion,dc=corp
+userPassword: HR_dwilson!2025
+
+
+dn: uid=mnovak,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Martin Novak
+sn: Novak
+givenName: Martin
+uid: mnovak
+mail: mnovak@techfusion.corp
+departmentNumber: IT
+ou: IT
+title: IT Support Specialist
+telephoneNumber: +421 2 5551401
+description: Test user in IT for LDAP injection lab
+labMemberOf: cn=IT-Operations-And-Security,ou=Groups,dc=techfusion,dc=corp
+userPassword: IT_mnovak!2025
+
+dn: uid=ztaylor,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Zoe Taylor
+sn: Taylor
+givenName: Zoe
+uid: ztaylor
+mail: ztaylor@techfusion.corp
+departmentNumber: IT
+ou: IT
+title: Network Engineer
+telephoneNumber: +421 2 5551402
+description: Test user in IT for LDAP injection lab
+labMemberOf: cn=IT-Operations-And-Security,ou=Groups,dc=techfusion,dc=corp
+userPassword: IT_ztaylor!2025
+
+dn: uid=ipetrov,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Igor Petrov
+sn: Petrov
+givenName: Igor
+uid: ipetrov
+mail: ipetrov@techfusion.corp
+departmentNumber: IT
+ou: IT
+title: SysAdmin
+telephoneNumber: +421 2 5551403
+description: Test user in IT for LDAP injection lab
+labMemberOf: cn=IT-Operations-And-Security,ou=Groups,dc=techfusion,dc=corp
+userPassword: IT_ipetrov!2025
+
+dn: uid=nhughes,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Natalie Hughes
+sn: Hughes
+givenName: Natalie
+uid: nhughes
+mail: nhughes@techfusion.corp
+departmentNumber: IT
+ou: IT
+title: Security Analyst
+telephoneNumber: +421 2 5551404
+description: Test user in IT for LDAP injection lab
+labMemberOf: cn=IT-Operations-And-Security,ou=Groups,dc=techfusion,dc=corp
+userPassword: IT_nhughes!2025
+
+dn: uid=jblaha,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Jakub Blaha
+sn: Blaha
+givenName: Jakub
+uid: jblaha
+mail: jblaha@techfusion.corp
+departmentNumber: IT
+ou: IT
+title: Database Administrator
+telephoneNumber: +421 2 5551405
+description: Test user in IT for LDAP injection lab
+labMemberOf: cn=IT-Operations-And-Security,ou=Groups,dc=techfusion,dc=corp
+userPassword: IT_jblaha!2025
+
+dn: uid=oali,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Omar Ali
+sn: Ali
+givenName: Omar
+uid: oali
+mail: oali@techfusion.corp
+departmentNumber: IT
+ou: IT
+title: IT Technician
+telephoneNumber: +421 2 5551406
+description: Test user in IT for LDAP injection lab
+labMemberOf: cn=IT-Operations-And-Security,ou=Groups,dc=techfusion,dc=corp
+userPassword: IT_oali!2025
+
+
+dn: uid=pnovak,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Peter Novak
+sn: Novak
+givenName: Peter
+uid: pnovak
+mail: pnovak@techfusion.corp
+departmentNumber: Sales
+ou: Sales
+title: Sales Representative
+telephoneNumber: +421 2 5551501
+description: Test user in Sales for LDAP injection lab
+labMemberOf: cn=SALES-Key-Accounts-Team,ou=Groups,dc=techfusion,dc=corp
+userPassword: SAL_pnovak!2025
+
+dn: uid=lcarter,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Linda Carter
+sn: Carter
+givenName: Linda
+uid: lcarter
+mail: lcarter@techfusion.corp
+departmentNumber: Sales
+ou: Sales
+title: Account Executive
+telephoneNumber: +421 2 5551502
+description: Test user in Sales for LDAP injection lab
+labMemberOf: cn=SALES-Key-Accounts-Team,ou=Groups,dc=techfusion,dc=corp
+userPassword: SAL_lcarter!2025
+
+dn: uid=akowalski,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Adam Kowalski
+sn: Kowalski
+givenName: Adam
+uid: akowalski
+mail: akowalski@techfusion.corp
+departmentNumber: Sales
+ou: Sales
+title: Sales Manager
+telephoneNumber: +421 2 5551503
+description: Test user in Sales for LDAP injection lab
+labMemberOf: cn=SALES-Key-Accounts-Team,ou=Groups,dc=techfusion,dc=corp
+userPassword: SAL_akowalski!2025
+
+dn: uid=s_marin,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Sofia Marin
+sn: Marin
+givenName: Sofia
+uid: s_marin
+mail: s_marin@techfusion.corp
+departmentNumber: Sales
+ou: Sales
+title: Business Development
+telephoneNumber: +421 2 5551504
+description: Test user in Sales for LDAP injection lab
+labMemberOf: cn=SALES-Key-Accounts-Team,ou=Groups,dc=techfusion,dc=corp
+userPassword: SAL_s_marin!2025
+
+dn: uid=rlee,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Richard Lee
+sn: Lee
+givenName: Richard
+uid: rlee
+mail: rlee@techfusion.corp
+departmentNumber: Sales
+ou: Sales
+title: Key Account Manager
+telephoneNumber: +421 2 5551505
+description: Test user in Sales for LDAP injection lab
+labMemberOf: cn=SALES-Key-Accounts-Team,ou=Groups,dc=techfusion,dc=corp
+userPassword: SAL_rlee!2025
+
+dn: uid=vnovak,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+objectClass: inetOrgPerson
+objectClass: groupMembership
+cn: Veronika Novak
+sn: Novak
+givenName: Veronika
+uid: vnovak
+mail: vnovak@techfusion.corp
+departmentNumber: Sales
+ou: Sales
+title: Inside Sales
+telephoneNumber: +421 2 5551506
+description: Test user in Sales for LDAP injection lab
+labMemberOf: cn=SALES-Key-Accounts-Team,ou=Groups,dc=techfusion,dc=corp
+userPassword: SAL_vnovak!2025
+
+
+# -------- Files (as inetOrgPerson; businessCategory=classification; description=path) --------
+
+dn: cn=engineering_wiki_overview.pdf,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: engineering_wiki_overview.pdf
+filePath: /srv/engineering/public/engineering_wiki_overview.pdf
+classification: public
+description: Overview of Engineering processes and documentation
+department: Engineering
+owner: uid=ajohnson,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=dev_tools_quickstart.pdf,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: dev_tools_quickstart.pdf
+filePath: /srv/engineering/public/dev_tools_quickstart.pdf
+classification: public
+description: Quickstart guide for standard development tools
+department: Engineering
+owner: uid=tkral,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=architecture_roadmap_2026.pdf,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: architecture_roadmap_2026.pdf
+filePath: /srv/engineering/confidential/architecture_roadmap_2026.pdf
+classification: confidential
+description: Long term architecture roadmap for core platform
+department: Engineering
+owner: uid=kmiller,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=incident_postmortem_2025-02-14.pdf,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: incident_postmortem_2025-02-14.pdf
+filePath: /srv/engineering/confidential/incident_postmortem_2025-02-14.pdf
+classification: confidential
+description: Postmortem for February 14 2025 production outage
+department: Engineering
+owner: uid=msvoboda,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=prototype_performance_results.xlsx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: prototype_performance_results.xlsx
+filePath: /srv/engineering/confidential/prototype_performance_results.xlsx
+classification: confidential
+description: Performance benchmark results for new prototype
+department: Engineering
+owner: uid=egarcia,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=reliability_improvement_plan.docx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: reliability_improvement_plan.docx
+filePath: /srv/engineering/confidential/reliability_improvement_plan.docx
+classification: confidential
+description: Plan to improve reliability of key services
+department: Engineering
+owner: uid=psingh,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+
+dn: cn=expense_policy.pdf,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: expense_policy.pdf
+filePath: /srv/finance/public/expense_policy.pdf
+classification: public
+description: Official company expense reimbursement policy
+department: Finance
+owner: uid=pschmidt,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=travel_reimbursement_form.pdf,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: travel_reimbursement_form.pdf
+filePath: /srv/finance/public/travel_reimbursement_form.pdf
+classification: public
+description: Standard travel reimbursement form template
+department: Finance
+owner: uid=eclark,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=salary_review_2025.xlsx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: salary_review_2025.xlsx
+filePath: /srv/finance/confidential/salary_review_2025.xlsx
+classification: confidential
+description: Detailed salary review data for 2025
+department: Finance
+owner: uid=pschmidt,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=budget_planning_2026.xlsx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: budget_planning_2026.xlsx
+filePath: /srv/finance/confidential/budget_planning_2026.xlsx
+classification: confidential
+description: Draft budget planning figures for 2026
+department: Finance
+owner: uid=jpeterson,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=tax_audit_notes_2024.docx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: tax_audit_notes_2024.docx
+filePath: /srv/finance/confidential/tax_audit_notes_2024.docx
+classification: confidential
+description: Notes and findings from 2024 tax audit
+department: Finance
+owner: uid=mlopez,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=cash_flow_sensitivity_analysis.xlsx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: cash_flow_sensitivity_analysis.xlsx
+filePath: /srv/finance/confidential/cash_flow_sensitivity_analysis.xlsx
+classification: confidential
+description: Cash flow sensitivity analysis for key scenarios
+department: Finance
+owner: uid=skim,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+
+dn: cn=employee_handbook.pdf,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: employee_handbook.pdf
+filePath: /srv/hr/public/employee_handbook.pdf
+classification: public
+description: General employee handbook and policies
+department: HR
+owner: uid=anovakova,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=holiday_calendar_2025.pdf,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: holiday_calendar_2025.pdf
+filePath: /srv/hr/public/holiday_calendar_2025.pdf
+classification: public
+description: Company holiday calendar for year 2025
+department: HR
+owner: uid=dwilson,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=performance_reviews_2025.xlsx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: performance_reviews_2025.xlsx
+filePath: /srv/hr/confidential/performance_reviews_2025.xlsx
+classification: confidential
+description: Consolidated employee performance reviews for 2025
+department: HR
+owner: uid=rbrown,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=compensation_bands_2025.xlsx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: compensation_bands_2025.xlsx
+filePath: /srv/hr/confidential/compensation_bands_2025.xlsx
+classification: confidential
+description: Compensation bands and ranges for 2025
+department: HR
+owner: uid=dwilson,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=recruitment_pipeline_tech_roles.xlsx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: recruitment_pipeline_tech_roles.xlsx
+filePath: /srv/hr/confidential/recruitment_pipeline_tech_roles.xlsx
+classification: confidential
+description: Recruitment pipeline data for technical roles
+department: HR
+owner: uid=lrossi,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+
+dn: cn=vpn_setup_guide.pdf,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: vpn_setup_guide.pdf
+filePath: /srv/it/public/vpn_setup_guide.pdf
+classification: public
+description: User guide for VPN setup on Windows and macOS
+department: IT
+owner: uid=mnovak,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=password_policy.pdf,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: password_policy.pdf
+filePath: /srv/it/public/password_policy.pdf
+classification: public
+description: Official password policy and complexity rules
+department: IT
+owner: uid=nhughes,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=network_diagram_core.vsdx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: network_diagram_core.vsdx
+filePath: /srv/it/confidential/network_diagram_core.vsdx
+classification: confidential
+description: Core network topology diagram
+department: IT
+owner: uid=ipetrov,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=domain_admins_credentials.kdbx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: domain_admins_credentials.kdbx
+filePath: /srv/it/confidential/domain_admins_credentials.kdbx
+classification: confidential
+description: Encrypted KeePass database with privileged credentials
+department: IT
+owner: uid=ipetrov,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=security_assessment_2025.pdf,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: security_assessment_2025.pdf
+filePath: /srv/it/confidential/security_assessment_2025.pdf
+classification: confidential
+description: Security assessment report for 2025
+department: IT
+owner: uid=nhughes,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+
+dn: cn=product_catalog_2025.pdf,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: product_catalog_2025.pdf
+filePath: /srv/sales/public/product_catalog_2025.pdf
+classification: public
+description: External product catalog for 2025
+department: Sales
+owner: uid=pnovak,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=key_accounts_pipeline.xlsx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: key_accounts_pipeline.xlsx
+filePath: /srv/sales/confidential/key_accounts_pipeline.xlsx
+classification: confidential
+description: Detailed pipeline for strategic key accounts
+department: Sales
+owner: uid=rlee,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=discount_approvals_2025.xlsx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: discount_approvals_2025.xlsx
+filePath: /srv/sales/confidential/discount_approvals_2025.xlsx
+classification: confidential
+description: Approved discount list for 2025 deals
+department: Sales
+owner: uid=akowalski,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=sales_forecast_2026.xlsx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: sales_forecast_2026.xlsx
+filePath: /srv/sales/confidential/sales_forecast_2026.xlsx
+classification: confidential
+description: Regional sales forecast for 2026
+department: Sales
+owner: uid=vnovak,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+
+dn: cn=tkral_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: tkral_personal_notes.txt
+filePath: /home/tkral/tkral_personal_notes.txt
+classification: private
+description: Private file for tkral: personal notes.txt
+department: Engineering
+owner: uid=tkral,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=ajohnson_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: ajohnson_personal_notes.txt
+filePath: /home/ajohnson/ajohnson_personal_notes.txt
+classification: private
+description: Private file for ajohnson: personal notes.txt
+department: Engineering
+owner: uid=ajohnson,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=msvoboda_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: msvoboda_personal_notes.txt
+filePath: /home/msvoboda/msvoboda_personal_notes.txt
+classification: private
+description: Private file for msvoboda: personal notes.txt
+department: Engineering
+owner: uid=msvoboda,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=psingh_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: psingh_personal_notes.txt
+filePath: /home/psingh/psingh_personal_notes.txt
+classification: private
+description: Private file for psingh: personal notes.txt
+department: Engineering
+owner: uid=psingh,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=kmiller_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: kmiller_personal_notes.txt
+filePath: /home/kmiller/kmiller_personal_notes.txt
+classification: private
+description: Private file for kmiller: personal notes.txt
+department: Engineering
+owner: uid=kmiller,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=kmiller_team_plans.docx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: kmiller_team_plans.docx
+filePath: /home/kmiller/kmiller_team_plans.docx
+classification: private
+description: Private file for kmiller: team plans.docx
+department: Engineering
+owner: uid=kmiller,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=kmiller_sensitive_brainstorm.md,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: kmiller_sensitive_brainstorm.md
+filePath: /home/kmiller/kmiller_sensitive_brainstorm.md
+classification: private
+description: Private file for kmiller: sensitive brainstorm.md
+department: Engineering
+owner: uid=kmiller,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=egarcia_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: egarcia_personal_notes.txt
+filePath: /home/egarcia/egarcia_personal_notes.txt
+classification: private
+description: Private file for egarcia: personal notes.txt
+department: Engineering
+owner: uid=egarcia,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+
+dn: cn=jpeterson_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: jpeterson_personal_notes.txt
+filePath: /home/jpeterson/jpeterson_personal_notes.txt
+classification: private
+description: Private file for jpeterson: personal notes.txt
+department: Finance
+owner: uid=jpeterson,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=mlopez_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: mlopez_personal_notes.txt
+filePath: /home/mlopez/mlopez_personal_notes.txt
+classification: private
+description: Private file for mlopez: personal notes.txt
+department: Finance
+owner: uid=mlopez,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=dnovak_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: dnovak_personal_notes.txt
+filePath: /home/dnovak/dnovak_personal_notes.txt
+classification: private
+description: Private file for dnovak: personal notes.txt
+department: Finance
+owner: uid=dnovak,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=skim_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: skim_personal_notes.txt
+filePath: /home/skim/skim_personal_notes.txt
+classification: private
+description: Private file for skim: personal notes.txt
+department: Finance
+owner: uid=skim,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=pschmidt_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: pschmidt_personal_notes.txt
+filePath: /home/pschmidt/pschmidt_personal_notes.txt
+classification: private
+description: Private file for pschmidt: personal notes.txt
+department: Finance
+owner: uid=pschmidt,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=pschmidt_team_plans.docx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: pschmidt_team_plans.docx
+filePath: /home/pschmidt/pschmidt_team_plans.docx
+classification: private
+description: Private file for pschmidt: team plans.docx
+department: Finance
+owner: uid=pschmidt,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=pschmidt_sensitive_brainstorm.md,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: pschmidt_sensitive_brainstorm.md
+filePath: /home/pschmidt/pschmidt_sensitive_brainstorm.md
+classification: private
+description: Private file for pschmidt: sensitive brainstorm.md
+department: Finance
+owner: uid=pschmidt,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=eclark_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: eclark_personal_notes.txt
+filePath: /home/eclark/eclark_personal_notes.txt
+classification: private
+description: Private file for eclark: personal notes.txt
+department: Finance
+owner: uid=eclark,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+
+dn: cn=anovakova_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: anovakova_personal_notes.txt
+filePath: /home/anovakova/anovakova_personal_notes.txt
+classification: private
+description: Private file for anovakova: personal notes.txt
+department: HR
+owner: uid=anovakova,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=rbrown_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: rbrown_personal_notes.txt
+filePath: /home/rbrown/rbrown_personal_notes.txt
+classification: private
+description: Private file for rbrown: personal notes.txt
+department: HR
+owner: uid=rbrown,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=rbrown_team_plans.docx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: rbrown_team_plans.docx
+filePath: /home/rbrown/rbrown_team_plans.docx
+classification: private
+description: Private file for rbrown: team plans.docx
+department: HR
+owner: uid=rbrown,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=rbrown_sensitive_brainstorm.md,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: rbrown_sensitive_brainstorm.md
+filePath: /home/rbrown/rbrown_sensitive_brainstorm.md
+classification: private
+description: Private file for rbrown: sensitive brainstorm.md
+department: HR
+owner: uid=rbrown,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=lrossi_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: lrossi_personal_notes.txt
+filePath: /home/lrossi/lrossi_personal_notes.txt
+classification: private
+description: Private file for lrossi: personal notes.txt
+department: HR
+owner: uid=lrossi,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=mgreen_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: mgreen_personal_notes.txt
+filePath: /home/mgreen/mgreen_personal_notes.txt
+classification: private
+description: Private file for mgreen: personal notes.txt
+department: HR
+owner: uid=mgreen,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=khorak_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: khorak_personal_notes.txt
+filePath: /home/khorak/khorak_personal_notes.txt
+classification: private
+description: Private file for khorak: personal notes.txt
+department: HR
+owner: uid=khorak,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=dwilson_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: dwilson_personal_notes.txt
+filePath: /home/dwilson/dwilson_personal_notes.txt
+classification: private
+description: Private file for dwilson: personal notes.txt
+department: HR
+owner: uid=dwilson,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+
+dn: cn=mnovak_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: mnovak_personal_notes.txt
+filePath: /home/mnovak/mnovak_personal_notes.txt
+classification: private
+description: Private file for mnovak: personal notes.txt
+department: IT
+owner: uid=mnovak,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=ztaylor_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: ztaylor_personal_notes.txt
+filePath: /home/ztaylor/ztaylor_personal_notes.txt
+classification: private
+description: Private file for ztaylor: personal notes.txt
+department: IT
+owner: uid=ztaylor,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=ipetrov_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: ipetrov_personal_notes.txt
+filePath: /home/ipetrov/ipetrov_personal_notes.txt
+classification: private
+description: Private file for ipetrov: personal notes.txt
+department: IT
+owner: uid=ipetrov,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=ipetrov_team_plans.docx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: ipetrov_team_plans.docx
+filePath: /home/ipetrov/ipetrov_team_plans.docx
+classification: private
+description: Private file for ipetrov: team plans.docx
+department: IT
+owner: uid=ipetrov,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=ipetrov_sensitive_info.md,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: ipetrov_sensitive_info.md
+filePath: /home/ipetrov/ipetrov_sensitive_info.md
+classification: private
+description: Private file for ipetrov: sensitive info.md
+department: IT
+owner: uid=ipetrov,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=nhughes_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: nhughes_personal_notes.txt
+filePath: /home/nhughes/nhughes_personal_notes.txt
+classification: private
+description: Private file for nhughes: personal notes.txt
+department: IT
+owner: uid=nhughes,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=nhughes_team_plans.docx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: nhughes_team_plans.docx
+filePath: /home/nhughes/nhughes_team_plans.docx
+classification: private
+description: Private file for nhughes: team plans.docx
+department: IT
+owner: uid=nhughes,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=nhughes_sensitive_brainstorm.md,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: nhughes_sensitive_brainstorm.md
+filePath: /home/nhughes/nhughes_sensitive_brainstorm.md
+classification: private
+description: Private file for nhughes: sensitive brainstorm.md
+department: IT
+owner: uid=nhughes,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=jblaha_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: jblaha_personal_notes.txt
+filePath: /home/jblaha/jblaha_personal_notes.txt
+classification: private
+description: Private file for jblaha: personal notes.txt
+department: IT
+owner: uid=jblaha,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=oali_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: oali_personal_notes.txt
+filePath: /home/oali/oali_personal_notes.txt
+classification: private
+description: Private file for oali: personal notes.txt
+department: IT
+owner: uid=oali,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+
+dn: cn=pnovak_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: pnovak_personal_notes.txt
+filePath: /home/pnovak/pnovak_personal_notes.txt
+classification: private
+description: Private file for pnovak: personal notes.txt
+department: Sales
+owner: uid=pnovak,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=lcarter_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: lcarter_personal_notes.txt
+filePath: /home/lcarter/lcarter_personal_notes.txt
+classification: private
+description: Private file for lcarter: personal notes.txt
+department: Sales
+owner: uid=lcarter,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=akowalski_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: akowalski_personal_notes.txt
+filePath: /home/akowalski/akowalski_personal_notes.txt
+classification: private
+description: Private file for akowalski: personal notes.txt
+department: Sales
+owner: uid=akowalski,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=akowalski_team_plans.docx,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: akowalski_team_plans.docx
+filePath: /home/akowalski/akowalski_team_plans.docx
+classification: private
+description: Private file for akowalski: team plans.docx
+department: Sales
+owner: uid=akowalski,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=akowalski_sensitive_brainstorm.md,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: akowalski_sensitive_brainstorm.md
+filePath: /home/akowalski/akowalski_sensitive_brainstorm.md
+classification: private
+description: Private file for akowalski: sensitive brainstorm.md
+department: Sales
+owner: uid=akowalski,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=s_marin_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: s_marin_personal_notes.txt
+filePath: /home/s_marin/s_marin_personal_notes.txt
+classification: private
+description: Private file for s_marin: personal notes.txt
+department: Sales
+owner: uid=s_marin,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=rlee_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: rlee_personal_notes.txt
+filePath: /home/rlee/rlee_personal_notes.txt
+classification: private
+description: Private file for rlee: personal notes.txt
+department: Sales
+owner: uid=rlee,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=vnovak_personal_notes.txt,ou=Files,dc=techfusion,dc=corp
+objectClass: fileObject
+cn: vnovak_personal_notes.txt
+filePath: /home/vnovak/vnovak_personal_notes.txt
+classification: private
+description: Private file for vnovak: personal notes.txt
+department: Sales
+owner: uid=vnovak,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+
+# -------- Devices --------
+dn: cn=2B13-A4-HP-M479,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: printer
+cn: 2B13-A4-HP-M479
+ipHostNumber: 10.0.10.10
+description: HP Color LaserJet Pro M479fdw A4 multifunction printer-scanner in room 2B13
+owner: uid=ipetrov,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=3A21-A4-HP-425dw,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: printer
+cn: 3A21-A4-HP-425dw
+ipHostNumber: 10.0.10.11
+description: HP LaserJet Pro 425dw A4 monochrome network printer in room 3A21
+owner: uid=jblaha,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=1Lobby-A3-Xerox-Altalink-C8030,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: printer
+cn: 1Lobby-A3-Xerox-Altalink-C8030
+ipHostNumber: 10.0.10.12
+description: Xerox AltaLink C8030 A3 colour multifunction printer-scanner in lobby
+owner: uid=mnovak,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=4C07-A4-Kyocera-ECOSYS-M5526cdn,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: printer
+cn: 4C07-A4-Kyocera-ECOSYS-M5526cdn
+ipHostNumber: 10.0.10.13
+description: Kyocera ECOSYS M5526cdn A4 colour multifunction printer-scanner in room 4C07
+owner: uid=tkral,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=ENG-LAB-A4-HP-LaserJet-P3015,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: printer
+cn: ENG-LAB-A4-HP-LaserJet-P3015
+ipHostNumber: 10.0.10.14
+description: HP LaserJet P3015 A4 mono lab printer in Engineering lab
+owner: uid=ajohnson,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=HR-AREA-A4-Canon-iR-ADV-4525,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: printer
+cn: HR-AREA-A4-Canon-iR-ADV-4525
+ipHostNumber: 10.0.10.15
+description: Canon imageRUNNER ADVANCE 4525 A4 copier-printer-scanner near HR
+owner: uid=rbrown,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=FINANCE-A4-Ricoh-MP-3054,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: printer
+cn: FINANCE-A4-Ricoh-MP-3054
+ipHostNumber: 10.0.10.16
+description: Ricoh MP 3054 A4 monochrome multifunction printer in Finance area
+owner: uid=pschmidt,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=SCN-RecordsRoom-Fujitsu-fi-7160,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: scanner
+cn: SCN-RecordsRoom-Fujitsu-fi-7160
+ipHostNumber: 10.0.10.17
+description: Fujitsu fi-7160 document scanner in records room
+owner: uid=lrossi,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=SCN-HR-DocuMate-6440,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: scanner
+cn: SCN-HR-DocuMate-6440
+ipHostNumber: 10.0.10.18
+description: Xerox DocuMate 6440 desktop scanner in HR office
+owner: uid=khorak,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=SCN-Finance-Canon-DR-C240,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: scanner
+cn: SCN-Finance-Canon-DR-C240
+ipHostNumber: 10.0.10.19
+description: Canon imageFORMULA DR-C240 document scanner in Finance office
+owner: uid=mlopez,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+
+
+dn: cn=ENG-TKRAL-WS01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: ENG-TKRAL-WS01
+ipHostNumber: 10.0.20.10
+description: Windows 11 workstation of Tomas Kral in Engineering
+owner: uid=tkral,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=ENG-AJOHNSON-WS01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: ENG-AJOHNSON-WS01
+ipHostNumber: 10.0.20.11
+description: Linux workstation of Alice Johnson in Engineering
+owner: uid=ajohnson,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=ENG-MSVOBODA-WS01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: ENG-MSVOBODA-WS01
+ipHostNumber: 10.0.20.12
+description: Windows workstation of Marek Svoboda in Engineering
+owner: uid=msvoboda,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=ENG-PSINGH-WS01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: ENG-PSINGH-WS01
+ipHostNumber: 10.0.20.13
+description: QA workstation of Priya Singh in Engineering
+owner: uid=psingh,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=ENG-KMILLER-WS01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: ENG-KMILLER-WS01
+ipHostNumber: 10.0.20.14
+description: Architecture workstation of Kevin Miller in Engineering
+owner: uid=kmiller,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=ENG-EGARCIA-WS01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: ENG-EGARCIA-WS01
+ipHostNumber: 10.0.20.15
+description: Backend development workstation of Elena Garcia in Engineering
+owner: uid=egarcia,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=FIN-JPETERSON-LT01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: FIN-JPETERSON-LT01
+ipHostNumber: 10.0.20.16
+description: Finance analyst laptop of John Peterson
+owner: uid=jpeterson,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=FIN-MLOPEZ-LT01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: FIN-MLOPEZ-LT01
+ipHostNumber: 10.0.20.17
+description: Senior analyst laptop of Maria Lopez in Finance
+owner: uid=mlopez,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=FIN-DNOVAK-DT01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: FIN-DNOVAK-DT01
+ipHostNumber: 10.0.20.18
+description: Desktop PC of accountant Daniel Novak in Finance
+owner: uid=dnovak,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=FIN-SKIM-LT01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: FIN-SKIM-LT01
+ipHostNumber: 10.0.20.19
+description: Controller laptop of Sarah Kim in Finance
+owner: uid=skim,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=FIN-PSCHMIDT-LT01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: FIN-PSCHMIDT-LT01
+ipHostNumber: 10.0.20.20
+description: Finance manager laptop of Peter Schmidt
+owner: uid=pschmidt,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=FIN-ECLARK-LT01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: FIN-ECLARK-LT01
+ipHostNumber: 10.0.20.21
+description: Junior accountant laptop of Emily Clark in Finance
+owner: uid=eclark,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=HR-ANOVAKOVA-WS01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: HR-ANOVAKOVA-WS01
+ipHostNumber: 10.0.20.22
+description: HR specialist workstation of Anna Novakova
+owner: uid=anovakova,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=HR-RBROWN-WS01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: HR-RBROWN-WS01
+ipHostNumber: 10.0.20.23
+description: HR manager workstation of Robert Brown
+owner: uid=rbrown,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=HR-LROSSI-WS01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: HR-LROSSI-WS01
+ipHostNumber: 10.0.20.24
+description: Recruiter workstation of Lucia Rossi in HR
+owner: uid=lrossi,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=HR-MGREEN-WS01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: HR-MGREEN-WS01
+ipHostNumber: 10.0.20.25
+description: HR generalist workstation of Michael Green
+owner: uid=mgreen,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=IT-IPETROV-WS01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: IT-IPETROV-WS01
+ipHostNumber: 10.0.20.26
+description: System administrator workstation of Igor Petrov
+owner: uid=ipetrov,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=IT-NHUGHES-WS01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: IT-NHUGHES-WS01
+ipHostNumber: 10.0.20.27
+description: Security analyst workstation of Natalie Hughes
+owner: uid=nhughes,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=SALES-RLEE-LT01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: SALES-RLEE-LT01
+ipHostNumber: 10.0.20.28
+description: Laptop of key account manager Richard Lee in Sales
+owner: uid=rlee,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=SALES-VNOVAK-LT01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: computer
+cn: SALES-VNOVAK-LT01
+ipHostNumber: 10.0.20.29
+description: Inside sales laptop of Veronika Novak
+owner: uid=vnovak,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+
+
+dn: cn=VM-ENG-CI-01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: virtual-machine
+cn: VM-ENG-CI-01
+ipHostNumber: 10.0.30.10
+description: Continuous integration virtual machine for Engineering
+owner: uid=ajohnson,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=VM-ENG-APP-01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: virtual-machine
+cn: VM-ENG-APP-01
+ipHostNumber: 10.0.30.11
+description: Application staging virtual machine for Engineering
+owner: uid=kmiller,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=VM-FIN-REPORTING-01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: virtual-machine
+cn: VM-FIN-REPORTING-01
+ipHostNumber: 10.0.30.12
+description: Financial reporting virtual machine for Finance
+owner: uid=pschmidt,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=VM-IT-MGMT-01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: virtual-machine
+cn: VM-IT-MGMT-01
+ipHostNumber: 10.0.30.13
+description: IT management tools virtual machine
+owner: uid=ipetrov,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=VM-SEC-SIEM-01,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: virtual-machine
+cn: VM-SEC-SIEM-01
+ipHostNumber: 10.0.30.14
+description: Security monitoring SIEM virtual machine
+owner: uid=nhughes,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+
+
+dn: cn=MOB-KMILLER-iPhone15,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: mobile-phone
+cn: MOB-KMILLER-iPhone15
+ipHostNumber: 10.0.40.10
+description: Corporate iPhone 15 for Kevin Miller in Engineering
+owner: uid=kmiller,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=MOB-PSINGH-GalaxyS24,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: mobile-phone
+cn: MOB-PSINGH-GalaxyS24
+ipHostNumber: 10.0.40.11
+description: Corporate Samsung Galaxy S24 for Priya Singh in Engineering
+owner: uid=psingh,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=MOB-PSCHMIDT-iPhone14,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: mobile-phone
+cn: MOB-PSCHMIDT-iPhone14
+ipHostNumber: 10.0.40.12
+description: Corporate iPhone 14 for Peter Schmidt in Finance
+owner: uid=pschmidt,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=MOB-RBROWN-GalaxyA55,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: mobile-phone
+cn: MOB-RBROWN-GalaxyA55
+ipHostNumber: 10.0.40.13
+description: Corporate Samsung Galaxy A55 for Robert Brown in HR
+owner: uid=rbrown,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=MOB-MNOVAK-iPhoneSE,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: mobile-phone
+cn: MOB-MNOVAK-iPhoneSE
+ipHostNumber: 10.0.40.14
+description: Corporate iPhone SE for Martin Novak in IT
+owner: uid=mnovak,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=MOB-NHUGHES-Pixel9,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: mobile-phone
+cn: MOB-NHUGHES-Pixel9
+ipHostNumber: 10.0.40.15
+description: Corporate Google Pixel 9 for Natalie Hughes in IT
+owner: uid=nhughes,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=MOB-PNOVAK-iPhone15Pro,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: mobile-phone
+cn: MOB-PNOVAK-iPhone15Pro
+ipHostNumber: 10.0.40.16
+description: Corporate iPhone 15 Pro for Peter Novak in Sales
+owner: uid=pnovak,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=MOB-LCARTER-GalaxyS23,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: mobile-phone
+cn: MOB-LCARTER-GalaxyS23
+ipHostNumber: 10.0.40.17
+description: Corporate Samsung Galaxy S23 for Linda Carter in Sales
+owner: uid=lcarter,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=MOB-RLEE-iPhone14Pro,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: mobile-phone
+cn: MOB-RLEE-iPhone14Pro
+ipHostNumber: 10.0.40.18
+description: Corporate iPhone 14 Pro for Richard Lee in Sales
+owner: uid=rlee,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=MOB-VNOVAK-GalaxyS22,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: ipHost
+objectClass: deviceTyping
+deviceType: mobile-phone
+cn: MOB-VNOVAK-GalaxyS22
+ipHostNumber: 10.0.40.19
+description: Corporate Samsung Galaxy S22 for Veronika Novak in Sales
+owner: uid=vnovak,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+
+
+dn: cn=EXT-2001-HR-FrontDesk,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: deviceTyping
+deviceType: landline
+cn: EXT-2001-HR-FrontDesk
+description: HR front desk landline extension 2001
+owner: uid=anovakova,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=EXT-3002-Finance-Controller,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: deviceTyping
+deviceType: landline
+cn: EXT-3002-Finance-Controller
+description: Finance controller landline extension 3002
+owner: uid=skim,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=EXT-4003-IT-ServiceDesk,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: deviceTyping
+deviceType: landline
+cn: EXT-4003-IT-ServiceDesk
+description: IT service desk landline extension 4003
+owner: uid=oali,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=EXT-5004-HR-Compensation,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: deviceTyping
+deviceType: landline
+cn: EXT-5004-HR-Compensation
+description: HR compensation team landline extension 5004
+owner: uid=dwilson,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=EXT-6005-Sales-BusinessDev,ou=Devices,dc=techfusion,dc=corp
+objectClass: device
+objectClass: deviceTyping
+deviceType: landline
+cn: EXT-6005-Sales-BusinessDev
+description: Sales business development landline extension 6005
+owner: uid=s_marin,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+
+# --------- Groups --------
+dn: cn=ENG-Platform-Developers,ou=Groups,dc=techfusion,dc=corp
+objectClass: top
+objectClass: groupOfNames
+cn: ENG-Platform-Developers
+description: Platform and backend development team in Engineering
+member: uid=tkral,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+member: uid=ajohnson,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+member: uid=msvoboda,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+member: uid=psingh,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+member: uid=kmiller,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+member: uid=egarcia,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=FIN-Planning-And-Analysis,ou=Groups,dc=techfusion,dc=corp
+objectClass: top
+objectClass: groupOfNames
+cn: FIN-Planning-And-Analysis
+description: Financial planning and analysis team
+member: uid=jpeterson,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+member: uid=mlopez,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+member: uid=dnovak,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+member: uid=skim,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+member: uid=pschmidt,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=HR-Recruitment-And-Payroll,ou=Groups,dc=techfusion,dc=corp
+objectClass: top
+objectClass: groupOfNames
+cn: HR-Recruitment-And-Payroll
+description: HR recruitment and payroll coordination group
+member: uid=anovakova,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+member: uid=rbrown,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+member: uid=lrossi,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+member: uid=mgreen,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+member: uid=khorak,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+member: uid=dwilson,ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+member: uid=eclark,ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=SALES-Key-Accounts-Team,ou=Groups,dc=techfusion,dc=corp
+objectClass: top
+objectClass: groupOfNames
+cn: SALES-Key-Accounts-Team
+description: Sales key accounts and business development team
+member: uid=pnovak,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+member: uid=lcarter,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+member: uid=akowalski,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+member: uid=s_marin,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+member: uid=rlee,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+member: uid=vnovak,ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+
+dn: cn=IT-Operations-And-Security,ou=Groups,dc=techfusion,dc=corp
+objectClass: top
+objectClass: groupOfNames
+cn: IT-Operations-And-Security
+description: IT operations, infrastructure and security team
+member: uid=mnovak,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+member: uid=ztaylor,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+member: uid=ipetrov,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+member: uid=nhughes,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+member: uid=jblaha,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+member: uid=oali,ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+member: uid=tkral,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+member: uid=ajohnson,ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp

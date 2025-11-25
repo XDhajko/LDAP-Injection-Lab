@@ -1,0 +1,237 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{% block title %}LDAP Lab{% endblock %}</title>
+
+  <!-- Bootstrap (already used across the app) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome (for the cog icon) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    /* bring back the subtle gray header background */
+    .lab-navbar {
+      background: #f5f5f5;
+    }
+    /* make the cog look like a plain icon, not a button */
+    .settings-link {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: #6c757d;
+      text-decoration: none;
+    }
+    .settings-link:hover { color: #343a40; }
+    /* small gap between label and pill */
+    .label-muted { color: #6c757d; font-size: .85rem; }
+
+    .task-toggle-btn {
+      display:flex;
+      align-items:center;
+      gap:.5rem;
+      width:100%;
+      border:0;
+      background:none;
+      padding:0;
+      margin:0 0 .5rem 0;
+      font-weight:700;
+      font-size:1rem;
+      line-height:1.25rem;
+      cursor:pointer;
+      color:#212529;
+      text-align:left;
+    }
+    .task-toggle-btn:focus { outline:none; box-shadow:none; }
+    .task-toggle-btn:hover { color:#212529; }
+    .chevron {
+      transition:transform .25s ease;
+    }
+    .task-panel {
+      overflow:hidden;
+      transition:max-height .35s ease, opacity .35s ease;
+      max-height:0;
+      opacity:0;
+    }
+    .task-panel.open {
+      max-height:600px; /* sufficient for content */
+      opacity:1;
+    }
+    .task-box {
+      background:#fff;
+      border:1px solid #dee2e6;
+      border-radius:.5rem;
+      padding:1rem 1.25rem;
+      margin-bottom:1rem;
+      box-shadow:0 1px 2px rgba(0,0,0,.08);
+    }
+    .task-box h5 {
+      margin:0 0 .75rem;
+      font-weight:600;
+      font-size:1rem;
+    }
+    .classification-badge {
+      display:inline-block;
+      padding:.15rem .45rem;
+      font-size:.7rem;
+      font-weight:600;
+      border-radius:.35rem;
+      background:#dc3545;
+      color:#fff;
+      letter-spacing:.5px;
+      vertical-align:middle;
+    }
+    .private-badge {
+      background:#6f42c1;
+    }
+    .inject-label {
+      font-size:.75rem;
+      font-weight:600;
+      background:#0d6efd;
+      color:#fff;
+      padding:.15rem .45rem;
+      border-radius:.35rem;
+      letter-spacing:.5px;
+      vertical-align:middle;
+    }
+    .mono-frag { font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace; }
+  </style>
+
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light lab-navbar border-bottom">
+  <div class="container">
+    <a class="navbar-brand fw-semibold" href="{% url 'index' %}">LDAP Lab</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#labNav"
+            aria-controls="labNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="labNav">
+      <!-- Left: exercise navigation -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link {% if active == 'e01' %}active{% endif %}" href="{% url 'e01_login' %}">E01 Login</a></li>
+        <li class="nav-item"><a class="nav-link {% if active == 'e02' %}active{% endif %}" href="{% url 'e02_file_browser' %}">E02 Files</a></li>
+        <li class="nav-item"><a class="nav-link {% if active == 'e03' %}active{% endif %}" href="{% url 'e03_devices' %}">E03 Devices</a></li>
+        <li class="nav-item"><a class="nav-link {% if active == 'e04' %}active{% endif %}" href="{% url 'e04_blind_and' %}">E04 Blind AND</a></li>
+        <li class="nav-item"><a class="nav-link {% if active == 'e05' %}active{% endif %}" href="{% url 'e05_blind_or' %}">E05 Blind OR</a></li>
+      </ul>
+
+      <!-- Right: read-only status pills + settings cog -->
+      <div class="d-flex align-items-center flex-wrap gap-3">
+
+        <!-- client mode -->
+        <div class="d-flex align-items-center gap-2">
+          <span class="label-muted">Client</span>
+          <span class="badge rounded-pill {{ client_mode_badge }}">
+            {{ client_mode|title }}
+          </span>
+        </div>
+
+        <!-- safeness -->
+        <div class="d-flex align-items-center gap-2">
+          <span class="label-muted">Safeness</span>
+          <span class="badge rounded-pill {{ safeness_badge }}">
+            {{ safeness|title }}
+          </span>
+        </div>
+
+        <!-- verbosity -->
+        <div class="d-flex align-items-center gap-2">
+          <span class="label-muted">Verbosity</span>
+          <span class="badge rounded-pill {{ verbosity_badge }}">
+            {{ verbosity|title }}
+          </span>
+        </div>
+
+        <a href="{% url 'settings_ui' %}" class="settings-link ms-2" title="Settings">
+          <i class="fa-solid fa-gear fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-4">
+    {% if active %}
+      <div class="task-box">
+        <button type="button" id="taskToggle" class="task-toggle-btn" aria-expanded="false">
+          <span id="taskTitle">
+            {% if active == 'e01' %}E01 Login task{% elif active == 'e02' %}E02 File Browser task{% elif active == 'e03' %}E03 Devices task{% elif active == 'e04' %}E04 Blind AND task{% elif active == 'e05' %}E05 Blind OR task{% else %}Exercise task{% endif %}
+          </span>
+          <span class="chevron" id="taskChevron">&#9662;</span>
+        </button>
+        <div id="taskPanel" class="task-panel" aria-hidden="true">
+          {% if active == 'e01' %}
+            <h5>Objective</h5>
+            <p>Bypass authentication and sign in as user <strong class="mono-frag">dnovak</strong> using vulnerable AND filter login. Manipulate the combined filter <code class="mono-frag">(&(uid=U)(userPassword=P))</code> so it evaluates true without the real password. Injection technique: <span class="inject-label">AND filter tampering</span>.</p>
+            <p>Hints: Try introducing an always-true clause or neutralizing the password comparison via parentheses injection.</p>
+          {% elif active == 'e02' %}
+            <h5>Objective</h5>
+            <p>Exfiltrate two sensitive files from the IT department that are not normally listed:</p>
+            <ul class="mb-2">
+              <li><strong class="mono-frag">domain_admins_credentials.kdbx</strong> <span class="classification-badge">CONFIDENTIAL</span></li>
+              <li><strong class="mono-frag">ipetrov_sensitive_info.md</strong> <span class="classification-badge private-badge">PRIVATE</span></li>
+            </ul>
+            <p>The visible search only returns <em>public</em> files via an AND chain:
+              <code class="mono-frag">(&(objectClass=fileObject)(department=...)(classification=public)(cn=*pattern*))</code>.
+              You must inject into the department or filename pattern to break / extend the filter and include confidential / private entries. Injection technique: <span class="inject-label">AND LDAP injection</span>.</p>
+            <p>Goal: Download both files successfully.</p>
+          {% elif active == 'e03' %}
+            <h5>Objective</h5>
+            <p>List all <strong>computer</strong> and <strong>virtual-machine</strong> device names owned by user <strong class="mono-frag">nhughes</strong>. The filter OR block can be expanded or altered by manipulating the <code class="mono-frag">device_type</code> parameter. Injection technique: <span class="inject-label">OR clause injection</span>.</p>
+            <p>Ensure you retrieve every workstation and VM for nhughes (compare with other user patterns to confirm completeness).</p>
+          {% elif active == 'e04' %}
+            <h5>Objective</h5>
+            <p>Infer the exact job title of the privileged user (e.g., "SysAdmin") without it being displayed. Use blind AND probing on group membership + department narrowing. Injection technique: <span class="inject-label">Blind AND inference</span>.</p>
+            <p>Strategy: Use gradual inference. Start with broad keywords (e.g., <code class="mono-frag">*admin*</code>), narrow down boundaries (e.g., <code class="mono-frag">*Admin</code>), and finally brute-force the prefix (e.g., <code class="mono-frag">a*Admin</code>, <code class="mono-frag">b*Admin</code>...) until the result count confirms the exact title.</p>
+          {% elif active == 'e05' %}
+            <h5>Objective</h5>
+            <p>Infer the <strong>Device Name</strong> (<code class="mono-frag">cn</code>) of the computer belonging to user <strong class="mono-frag">ipetrov</strong>. The base filter is <code class="mono-frag">(|(uid=*q*)(mail=*q*))</code>. You must inject a payload that breaks this OR block and targets the device's CN. Injection technique: <span class="inject-label">Blind OR inference</span>.</p>
+            <p>Strategy: Inject a payload like <code class="mono-frag">foo)(&(deviceType=computer)(owner=*ipetrov*)(cn=IT-IPETROV*</code>. If the result count is non-zero, your guess is correct. Iterate through characters to reconstruct the full name.</p>
+          {% else %}
+            <h5>Task</h5>
+            <p>No specific task text available.</p>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+    {% if verbosity == "verbose" and request.path != '/' %}
+    <div class="mb-3">
+      <label class="form-label fw-semibold">Filter used:</label>
+      <div class="form-control" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; white-space: nowrap; overflow-x: auto;">
+        {{ filter_used|default:"(no filter constructed)" }}
+      </div>
+    </div>
+    {% if error %}
+      <div class="alert alert-warning"><strong>Error:</strong> {{ error }}</div>
+    {% endif %}
+  {% endif %}
+
+  {% block content %}{% endblock %}
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+{% block extra_js %}{% endblock %}
+<script>
+    (function(){
+      const btn = document.getElementById('taskToggle');
+      const panel = document.getElementById('taskPanel');
+      const chev = document.getElementById('taskChevron');
+      if(!btn || !panel || !chev) return;
+      btn.addEventListener('click', () => {
+        const open = panel.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true':'false');
+        panel.setAttribute('aria-hidden', open ? 'false':'true');
+        chev.style.transform = open ? 'rotate(180deg)' : 'rotate(0deg)';
+      });
+    })();
+  </script>
+</body>
+</html>

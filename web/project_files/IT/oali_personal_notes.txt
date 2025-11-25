@@ -1,0 +1,7 @@
+File: oali_personal_notes.txt
+Department: IT
+Classification: PRIVATE
+Owner UID: oali
+
+This is placeholder demo content for LDAP injection lab.
+The real file would contain sensitive or public data according to its classification.

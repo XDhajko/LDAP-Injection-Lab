@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Device Detail{% endblock %}
+{% block content %}
+
+<style>
+  .edge-pad thead th:first-child,
+  .edge-pad tbody td:first-child { padding-left: 1rem; }
+  .edge-pad thead th:last-child,
+  .edge-pad tbody td:last-child { padding-right: 1rem; }
+</style>
+
+<a href="{% url 'e04_devices' %}?room={{ room }}" class="btn btn-link mb-3">&larr; Back to printers</a>
+
+<h3 class="mb-3">Device details</h3>
+<p class="text-muted"><small>DN:</small> <code>{{ dn }}</code></p>
+
+<table class="table table-sm table-striped align-middle edge-pad" style="--bs-table-cell-padding-x: 1rem;">
+  <thead><tr><th style="width: 260px;">Attribute</th><th>Value</th></tr></thead>
+  <tbody>
+    {% for k, v in attrs.items %}
+      <tr>
+        <td class="fw-semibold">{{ k }}</td>
+        <td>
+          {% if v is iterable and v is not string %}
+            {% for item in v %}
+              <code class="d-inline-block me-1">{{ item }}</code>
+            {% endfor %}
+          {% else %}
+            <code>{{ v }}</code>
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

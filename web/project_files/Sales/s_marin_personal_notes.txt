@@ -1,0 +1,7 @@
+File: s_marin_personal_notes.txt
+Department: Sales
+Classification: PRIVATE
+Owner UID: s_marin
+
+This is placeholder demo content for LDAP injection lab.
+The real file would contain sensitive or public data according to its classification.

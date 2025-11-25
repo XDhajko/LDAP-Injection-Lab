@@ -1,0 +1,70 @@
+dn: ou=Departments,dc=techfusion,dc=corp
+objectClass: top
+objectClass: organizationalUnit
+ou: Departments
+
+dn: ou=Finance,ou=Departments,dc=techfusion,dc=corp
+objectClass: top
+objectClass: organizationalUnit
+ou: Finance
+
+dn: ou=Users,ou=Finance,ou=Departments,dc=techfusion,dc=corp
+objectClass: top
+objectClass: organizationalUnit
+ou: Users
+
+dn: ou=HR,ou=Departments,dc=techfusion,dc=corp
+objectClass: top
+objectClass: organizationalUnit
+ou: HR
+
+dn: ou=Users,ou=HR,ou=Departments,dc=techfusion,dc=corp
+objectClass: top
+objectClass: organizationalUnit
+ou: Users
+
+dn: ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+objectClass: top
+objectClass: organizationalUnit
+ou: Engineering
+
+dn: ou=Users,ou=Engineering,ou=Departments,dc=techfusion,dc=corp
+objectClass: top
+objectClass: organizationalUnit
+ou: Users
+
+dn: ou=IT,ou=Departments,dc=techfusion,dc=corp
+objectClass: top
+objectClass: organizationalUnit
+ou: IT
+
+dn: ou=Users,ou=IT,ou=Departments,dc=techfusion,dc=corp
+objectClass: top
+objectClass: organizationalUnit
+ou: Users
+
+dn: ou=Sales,ou=Departments,dc=techfusion,dc=corp
+objectClass: top
+objectClass: organizationalUnit
+ou: Sales
+
+dn: ou=Users,ou=Sales,ou=Departments,dc=techfusion,dc=corp
+objectClass: top
+objectClass: organizationalUnit
+ou: Users
+
+dn: ou=Groups,dc=techfusion,dc=corp
+objectClass: top
+objectClass: organizationalUnit
+ou: Groups
+
+dn: ou=Files,dc=techfusion,dc=corp
+objectClass: top
+objectClass: organizationalUnit
+ou: Files
+
+dn: ou=Devices,dc=techfusion,dc=corp
+objectClass: top
+objectClass: organizationalUnit
+ou: Devices
+

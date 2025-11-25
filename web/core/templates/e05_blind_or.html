@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}E05 Blind OR{% endblock %}
+{% block content %}
+<style>
+  .edge-pad thead th:first-child,
+  .edge-pad tbody td:first-child { padding-left: 1rem; }
+  .edge-pad thead th:last-child,
+  .edge-pad tbody td:last-child { padding-right: 1rem; }
+</style>
+<div class="card shadow-sm">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <strong>Blind OR Probe</strong>
+    <form method="get" class="d-flex gap-2">
+      <select name="match" class="form-select form-select-sm" style="width:140px;">
+        <option value="contains" {% if match == 'contains' %}selected{% endif %}>Contains</option>
+        <option value="starts" {% if match == 'starts' %}selected{% endif %}>Starts with</option>
+        <option value="ends" {% if match == 'ends' %}selected{% endif %}>Ends with</option>
+        <option value="exact" {% if match == 'exact' %}selected{% endif %}>Exact</option>
+      </select>
+      <input name="q" value="{{ q }}" class="form-control form-control-sm" style="width:220px;" placeholder="Pattern (e.g. a)">
+      <button class="btn btn-sm btn-primary">Search</button>
+    </form>
+  </div>
+  <div class="card-body p-0">
+    <div class="table-responsive">
+      <table class="table table-sm mb-0 edge-pad" style="--bs-table-cell-padding-x:1rem;">
+        <thead class="table-light">
+          <tr><th>uid</th><th>mail</th></tr>
+        </thead>
+        <tbody>
+          {% for r in rows %}
+            <tr><td>{{ r.uid }}</td><td>{{ r.mail }}</td></tr>
+          {% empty %}
+            <tr><td colspan="2" class="text-center py-4">No matches.</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="card-footer d-flex justify-content-between align-items-center">
+    <div>Total: <strong>{{ count }}</strong></div>
+    <div class="small">
+      Page {{ page }} / {{ pages }}
+      {% if pages > 1 %}
+        {% if page > 1 %}
+          <a href="?match={{ match }}&q={{ q }}&page={{ page|add:-1 }}">Prev</a>
+        {% else %}Prev{% endif %} |
+        {% if page < pages %}
+          <a href="?match={{ match }}&q={{ q }}&page={{ page|add:1 }}">Next</a>
+        {% else %}Next{% endif %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}
